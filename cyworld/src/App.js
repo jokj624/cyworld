@@ -1,6 +1,6 @@
 import { Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import './App.css';
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Helmet>
         <title>수고했어!</title>
       </Helmet>
+      <Route component = {MainPage} path = '/' exact />
     </>
   );
 }
