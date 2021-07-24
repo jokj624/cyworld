@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card from './Card';
 
 const WrapperDiv = styled.div`
+    z-index: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -38,13 +38,26 @@ const ContentDiv = styled.div`
     border: 1px solid #8f8f8f;
     border-radius: 10px;
 `;
-const Wrapper = () => {
+
+const OuterDiv = styled.div`
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+`;
+
+const Wrapper = ({ left, right }) => {
     return(
         <WrapperDiv>
             <Card2>
                 <InnerDiv>
-                    <ContentDiv>
-                        <Card />
+                    <ContentDiv >
+                        <OuterDiv>
+                            {left}
+                            {right}
+                        </OuterDiv>
                     </ContentDiv>
                 </InnerDiv>
             </Card2>

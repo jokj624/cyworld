@@ -2,8 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Wrapper from '../common/Wrapper';
 import Banner from '../common/Banner';
+import RightBar from '../common/RightBar';
+import LeftBar from '../common/LeftBar';
+import Home from '../content/Home';
 
 const Div = styled.div`
+    z-index: -10;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -15,7 +19,7 @@ const Div = styled.div`
 const Main = () => {
     return (
         <Div>
-            <Wrapper />
+            <Wrapper left={<LeftBar />} right={<RightBar><Home /></RightBar>} />
             <Banner />
         </Div>
     );

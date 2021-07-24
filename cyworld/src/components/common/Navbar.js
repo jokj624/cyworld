@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
@@ -23,7 +23,7 @@ const Nav = styled.nav`
             color: #fff;
             font-family: DOSGothic;
             font-size: 0.9rem;
-            &:focus {
+            &.focused {
                 background: #fff;
                 color: #333;
             }
@@ -36,13 +36,13 @@ const Navbar = () => {
         <Nav>
             <ul>
                 <li>
-                    <Link exact to="/" activeClassName="selected">홈</Link>
+                    <NavLink exact to="/" activeClassName="focused">홈</NavLink>
                 </li>
                 <li>
-                    <Link exact to="/" activeClassName="selected">사진첩</Link>
+                    <NavLink exact to="/gallery" activeClassName="focused">사진첩</NavLink>
                 </li>
                 <li>
-                    <Link exact to="/" activeClassName="selected">방명록</Link>
+                    <NavLink exact to="/letter" activeClassName="focused">방명록</NavLink>
                 </li>
             </ul>
         </Nav>

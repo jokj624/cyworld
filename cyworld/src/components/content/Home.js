@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import room from '../../image/room.jpeg';
+import Guest from './Guest';
 import '../common/Wrapper.css';
 
 const OuterDiv = styled.div`
@@ -15,14 +16,13 @@ const OuterDiv = styled.div`
 const Title = styled.div`   
     width: 100%;
     h4 {
-        margin: 15px 25px;
-        font-family: DOSGothic;
+        margin: 10px 25px;
         color: #1f83c4
     }
 `;
 const Image = styled.img`
     width: 90%;
-    height: 75%;
+    height: 70%;
 `;
 
 const Home = () => {
@@ -30,6 +30,7 @@ const Home = () => {
         <OuterDiv>
             <Title><h4>미니룸</h4></Title>
             <Image src={room} />
+            <Guest />
         </OuterDiv>
     );
 };
