@@ -7,7 +7,7 @@ const Div = styled.div`
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
     background: #a584ff;
 `;
@@ -15,8 +15,7 @@ const Div = styled.div`
 const Main = () => {
     return (
         <Div>
-            <Wrapper>
-            </Wrapper>
+            <Wrapper />
             <Banner />
         </Div>
     );
