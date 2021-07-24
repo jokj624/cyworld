@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "sandol";        
+  src: url("../../font/산돌종이학체.ttf");
+}
+
+@font-face {
+    font-family: 'DOSGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
