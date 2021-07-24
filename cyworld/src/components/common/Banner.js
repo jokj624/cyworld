@@ -31,7 +31,7 @@ const Banner = () => {
     return (
         <OuterDiv>
             <Music>💿 비행기 - 거북이</Music>
-            <audio controls autoplay> <source src={music} type="audio/mp3" /> </audio>
+            <audio controls autoPlay> <source src={music} type="audio/mp3" /> </audio>
         </OuterDiv>
     );
 };
