@@ -1,7 +1,19 @@
 import { Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import styled from 'styled-components';
 import MainPage from './pages/MainPage';
 import LetterPage from './pages/LetterPage';
+import GalleryPage from './pages/GalleryPage';
+import Banner from './components/common/Banner';
+
+const Div = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 100%;
+    background: #a584ff;
+`;
 
 function App() {
   return (
@@ -9,8 +21,12 @@ function App() {
       <Helmet>
         <title>수고했어!</title>
       </Helmet>
-      <Route component = {MainPage} path = '/' exact />
-      <Route componet = {LetterPage} path = '/letter' />
+      <Div>
+        <Route component = {MainPage} path = '/' exact />
+        <Route component = {LetterPage} path = "/letter" />
+        <Route component={GalleryPage} path="/gallery" />
+        <Banner/>
+      </Div>
     </>
   );
 }
