@@ -43,7 +43,7 @@ const OuterDiv = styled.div`
     z-index: 10;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
 `;

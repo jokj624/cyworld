@@ -52,8 +52,8 @@ const Info = styled.div`
     }
     span {
         font-size: 0.8em;
-        margin-top: 15%;
-        margin-left: 5px;
+        margin-top: 25px;
+        margin-left: 2px;
         color: #8f8f8f;
     }
     p {
