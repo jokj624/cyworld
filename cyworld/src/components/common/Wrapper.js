@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const WrapperDiv = styled.div`
-    z-index: 0;
+    z-index: 10;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
