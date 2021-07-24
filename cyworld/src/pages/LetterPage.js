@@ -1,5 +1,5 @@
 import React from 'react';
-import Letter from '../components/content/Letter';
+import Letter from '../components/letter/Letter';
 
 function LetterPage() {
     return (
