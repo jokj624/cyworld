@@ -8,7 +8,7 @@ import Banner from './components/common/Banner';
 
 const Div = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-wrap: wrap;
     padding: 15px;
     width: 100%;
@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>수고했어!</title>
+        <title>황지은 사랑한다</title>
       </Helmet>
       <Div>
         <Route component = {MainPage} path = '/' exact />
