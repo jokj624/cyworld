@@ -75,7 +75,7 @@ const Guest = () => {
 
     useEffect(() => {
         async function get() {
-            const response = await axios.get("/guest");
+            const response = await axios.get("http://13.124.78.24:5000/guest");
             setGuests(response.data.data);
         }
         get();
@@ -96,7 +96,7 @@ const Guest = () => {
             name: name,
             content: guest
         };
-        const response = await axios.post("/guest", body);
+        const response = await axios.post("http://13.124.78.24:5000/guest", body);
         setGuests(response.data.data);
     };
     return (
@@ -112,7 +112,7 @@ const Guest = () => {
                 <input type="submit" value="확인" />
             </form>
             </FormDiv>
-            {guests.map((item)=> {
+            {guests && guests.map((item)=> {
                 return (
                     <GuestDiv>
                         <TitleDiv>• {item.content} (<span>{item.name}</span>) <span className="date">2021.7.25</span></TitleDiv>

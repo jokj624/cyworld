@@ -119,7 +119,7 @@ const PostLetter = () => {
         const num = randomIndex();
         setIndex(num);
         async function get() {
-            const response = await axios.get("/letter");
+            const response = await axios.get("http://13.124.78.24:5000/letter");
             setLetters(response.data.data);
         }
         get();
@@ -146,7 +146,7 @@ const PostLetter = () => {
             letter: letter,
             avartar: avatarArray[index]
         };
-        const response = await axios.post("/letter", body);
+        const response = await axios.post("http://13.124.78.24:5000/letter", body);
         setLetters(response.data.data);
     };
 
@@ -167,7 +167,7 @@ const PostLetter = () => {
                     </div>
                 </form>
             </FormDiv>
-            {letters.map((item) => {
+            {letters && letters.map((item) => {
                 return (
                     <LetterDiv>
                         <TitleDiv>
