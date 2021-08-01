@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from '../components/main/Main';
 
-function MainPage() {
+const MainPage = () => {
     return (
         <Main />
     );
