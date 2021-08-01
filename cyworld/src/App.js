@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import MainPage from './pages/MainPage';
 import LetterPage from './pages/LetterPage';
 import GalleryPage from './pages/GalleryPage';
+import DiaryPage from './pages/DiaryPage';
 import Banner from './components/common/Banner';
 
 const Div = styled.div`
@@ -22,9 +23,10 @@ function App() {
         <title>황지은 사랑한다</title>
       </Helmet>
       <Div>
-        <Route component = {MainPage} path = '/' exact />
-        <Route component = {LetterPage} path = "/letter" />
+        <Route component = {MainPage} path='/' exact />
+        <Route component = {LetterPage} path="/letter" />
         <Route component={GalleryPage} path="/gallery" />
+        <Route component={DiaryPage} path="/diary" />
         <Banner/>
       </Div>
     </>
